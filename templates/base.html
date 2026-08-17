@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$page_title</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="termbar">
+    <span class="path">$breadcrumb</span>
+    <span>zsh — 80&times;24</span>
+  </div>
+
+  <div class="screen">
+    <pre id="boot"></pre>
+
+    <div id="page-body" class="hidden">
+      $body
+    </div>
+
+    <div class="statusbar" id="statusbar">
+      <span class="mode">-- NORMAL --</span>
+      <span id="status-mid">$status_mid</span>
+      <span id="status-clock">--:--:--</span>
+    </div>
+  </div>
+
+  <footer class="note">static · built from markdown · no tracking</footer>
+
+</div>
+<script src="/boot.js"></script>
+</body>
+</html>
