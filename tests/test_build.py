@@ -1,6 +1,7 @@
 """
 Tests for build.py — run with: pytest
 """
+
 import sys
 from pathlib import Path
 
