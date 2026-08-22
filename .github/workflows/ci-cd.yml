@@ -21,6 +21,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "pip"
+          cache-dependency-path: build-requirements.txt
 
       - name: Install dependencies
         run: |
@@ -48,6 +49,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
+          cache-dependency-path: build-requirements.txt
 
       - name: Install dependencies
         run: |
@@ -81,6 +83,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "pip"
+          cache-dependency-path: build-requirements.txt
 
       - name: Generate static site
         run: |
@@ -130,6 +133,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "pip"
+          cache-dependency-path: build-requirements.txt
 
       - name: Generate static site
         run: |
